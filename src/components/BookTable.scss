@@ -1,0 +1,71 @@
+/* BookTable.scss */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spaces between cells */
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd; /* Light grey borders for rows */
+  }
+  
+  th {
+    background-color: #007bff; /* Blue background for header */
+    color: white;
+    font-weight: bold;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  button.edit-btn {
+    background-color: #28a745; /* Green background for Edit */
+    color: white;
+  }
+  
+  button.delete-btn {
+    background-color: #dc3545; /* Red background for Delete */
+    color: white;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Responsive Table */
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 0.9rem; /* Smaller font size on mobile */
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  

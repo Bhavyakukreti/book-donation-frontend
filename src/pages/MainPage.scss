@@ -1,0 +1,53 @@
+/* MainPage.scss */
+
+.main-page {
+    padding: 2rem;
+    
+  }
+  
+  .book-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    margin-top: 20px;
+    
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+  
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 1024px) {
+    .book-cards-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .book-cards-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
